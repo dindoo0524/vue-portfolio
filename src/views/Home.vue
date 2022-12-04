@@ -96,66 +96,66 @@
 </template>
 
 <script>
-import { VueTyper } from "vue-typer";
-import VueCompareImage from "vue-compare-image";
+import { VueTyper } from 'vue-typer'
+import VueCompareImage from 'vue-compare-image'
 
 export default {
   metaInfo: {
-    title: "Home",
+    title: 'Home',
     titleTemplate: "%s ← Eldin's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Eldin Zaimovic's Portfolio" },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Eldin' Space" },
-      { property: "og:site_name", content: "Eldin' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', content: "Eldin Zaimovic's Portfolio" },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Eldin' Space" },
+      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://eldin.space' },
       {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
+        property: 'og:image',
+        content: 'https://i.imgur.com/Dcz2PGx.jpg'
       },
-      { property: "og:description", content: "Eldin Zaimovic's Portfolio" }
+      { property: 'og:description', content: "Eldin Zaimovic's Portfolio" }
     ]
   },
   components: {
-    "vue-typer": VueTyper,
+    'vue-typer': VueTyper,
     VueCompareImage
   },
-  data() {
+  data () {
     return {
       icons: [
-        { href: "https://github.com/EldinZaimovic", icon: "fab fa-github" },
+        { href: 'https://github.com/EldinZaimovic', icon: 'fab fa-github' },
         {
-          href: "https://stackoverflow.com/users/story/9660700",
-          icon: "fab fa-stack-overflow"
+          href: 'https://stackoverflow.com/users/story/9660700',
+          icon: 'fab fa-stack-overflow'
         },
-        { href: "https://twitter.com/EldinMatricar", icon: "fab fa-twitter" },
+        { href: 'https://twitter.com/EldinMatricar', icon: 'fab fa-twitter' },
         {
-          href: "https://www.linkedin.com/in/eldin-zaimovic",
-          icon: "fab fa-linkedin-in"
-        },
-        {
-          href: "https://www.xing.com/profile/Eldin_Zaimovic?sc_o=mxb_p",
-          icon: "fab fa-xing"
+          href: 'https://www.linkedin.com/in/eldin-zaimovic',
+          icon: 'fab fa-linkedin-in'
         },
         {
-          href: "https://www.facebook.com/EldinVasVoli",
-          icon: "fab fa-facebook-f"
+          href: 'https://www.xing.com/profile/Eldin_Zaimovic?sc_o=mxb_p',
+          icon: 'fab fa-xing'
         },
-        { href: "https://www.instagram.com/matricar", icon: "fab fa-instagram" }
+        {
+          href: 'https://www.facebook.com/EldinVasVoli',
+          icon: 'fab fa-facebook-f'
+        },
+        { href: 'https://www.instagram.com/matricar', icon: 'fab fa-instagram' }
       ],
-      text1: ["Front-End Developer", "Web Developer", "Web Designer"],
-      leftImage: "https://i.imgur.com/bU50uS9.jpg",
-      rightImage: "https://i.imgur.com/z3ZoEEw.jpg",
-      leftImage2: "https://i.imgur.com/SXBitjh.jpg",
-      rightImage2: "https://i.imgur.com/Dcz2PGx.jpg",
+      text1: ['Front-End Developer', 'Web Developer', 'Web Designer'],
+      leftImage: 'https://i.imgur.com/bU50uS9.jpg',
+      rightImage: 'https://i.imgur.com/z3ZoEEw.jpg',
+      leftImage2: 'https://i.imgur.com/SXBitjh.jpg',
+      rightImage2: 'https://i.imgur.com/Dcz2PGx.jpg',
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5
-    };
+    }
   }
-};
+}
 </script>
 <style>
 @keyframes rocking {
@@ -190,4 +190,3 @@ export default {
   background-color: #e91e63;
 }
 </style>
-
