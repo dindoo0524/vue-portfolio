@@ -1,18 +1,29 @@
 <template>
   <v-container grid-list-xl>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-      <v-flex v-for="portfolio in portfolios" :key="portfolio.src" xs12 sm12 md4 lg4 xl4>
+      <v-flex xs12 sm12 md4 lg4 xl4>
         <v-card
-          :to="'/portfolio/'+(portfolio.title).toLowerCase()"
+          :to="'/portfolio/web'"
           hover
-          flat
-          color="transparent"
-          height="230"
+          height="280"
         >
           <v-card-title></v-card-title>
-          <v-img :src="portfolio.src" aspect-ratio="2.75" height="130" contain></v-img>
+          <v-img :src="require('@/assets/web_developer.png')" class="mx-auto" height="180" center cover></v-img>
           <v-card-title primary-title class="justify-center">
-            <v-flex text-xs-center subheading font-weight-bold>{{portfolio.title}}</v-flex>
+            <v-flex text-xs-center subheading font-weight-bold>Web 개발 프로젝트</v-flex>
+          </v-card-title>
+        </v-card>
+      </v-flex>
+      <v-flex xs12 sm12 md4 lg4 xl4>
+        <v-card
+          :to="'/portfolio/app'"
+          hover
+          height="280"
+        >
+          <v-card-title></v-card-title>
+          <v-img :src="require('@/assets/app.png')"  class="mx-auto" height="180" cover></v-img>
+          <v-card-title primary-title class="justify-center">
+            <v-flex text-xs-center subheading font-weight-bold>App 개발 프로젝트</v-flex>
           </v-card-title>
         </v-card>
       </v-flex>
@@ -52,17 +63,13 @@ export default {
     return {
       portfolios: [
         {
-          src: 'https://i.imgur.com/GvTt5GG.png',
+          src: '@/assets/web.png',
           title: 'Web'
         },
 
         {
-          src: 'https://i.imgur.com/wXLtLKy.png',
-          title: 'Video'
-        },
-        {
-          src: 'https://i.imgur.com/g74mGuU.png',
-          title: 'Graphic'
+          src: '@/assets/app.png',
+          title: 'App'
         }
       ]
     }

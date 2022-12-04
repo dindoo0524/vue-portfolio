@@ -1,81 +1,32 @@
 <template>
   <v-container grid-list-xl>
-    <v-layout row justify-center align-center wrap class="mt-4 pt-2">
+    <v-layout row align-center wrap class="mt-4 pt-2">
       <v-flex xs12 sm12 md6 lg6 xl6>
         <h2 class="pb-4 mt-2">
-          <span>GetIn</span>
-          <span class="green--text">Touch</span>
+          <span>연락 주세요 😎</span>
         </h2>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-map-marker-alt</v-icon>
-          <span>Doboj,&nbsp;</span>
-          <span class="green--text">Bosnia & Herzegovina</span>
+          <span>서울&nbsp;</span>
+          <span class="green--text">대한민국</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-envelope</v-icon>
-          <span>eldin@</span>
-          <span class="green--text">zaimovic.com</span>
+          <a href="mailto:jinju@liveklass.com">
+            <span>jinju@liveklass.com</span>
+          </a>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="green" left>fas fa-phone</v-icon>
-          <span>+387&nbsp;</span>
-          <span class="green--text">61 596 676</span>
+          <span class="green--text">010-2727-6548</span>
         </div>
-        <div class="py-4 subheading font-weight-bold">
-          <v-icon large color="green" left>fas fa-check</v-icon>
-          <span>Freelance</span>
-          <span class="green--text">Available</span>
+         <div class="py-4 subheading font-weight-bold">
+          <v-icon large color="green" left>fab fa-instagram</v-icon>
+          <span>Instargram DM&nbsp;</span>
+          <a href="https://www.instagram.com/dev._.rabbit" target="_blank" class="green--text">@dev._.rabbit</a>
         </div>
       </v-flex>
-
-      <v-flex xs12 sm12 md6 lg6 xl6>
-        <h2 class="pb-4 mb-4">
-          <span>Contact</span>
-          <span class="green--text">Form</span>
-        </h2>
-
-        <form method="POST" action="https://formspree.io/eldin@zaimovic.com">
-          <v-text-field
-            name="name"
-            color="green"
-            background-color="transparent"
-            v-model="name"
-            :error-messages="nameErrors"
-            label="Name"
-            required
-            @blur="$v.name.$touch()"
-          ></v-text-field>
-          <v-text-field
-            type="email"
-            color="green"
-            background-color="transparent"
-            name="email"
-            v-model="email"
-            :error-messages="emailErrors"
-            label="E-mail"
-            required
-            @blur="$v.email.$touch()"
-          ></v-text-field>
-          <v-textarea
-            color="green"
-            background-color="transparent"
-            :counter="200"
-            :error-messages="bodyErrors"
-            v-model="body"
-            label="Textarea"
-            name="body"
-            @blur="$v.body.$touch()"
-          ></v-textarea>
-          <v-btn
-            @click="submit"
-            type="submit"
-            color="green"
-            class="white--text"
-            :disabled=" (body.length<=20)"
-          >SEND MESSAGE</v-btn>
-          <v-btn @click="clear">clear</v-btn>
-        </form>
-      </v-flex>
+      <v-img :src="require('@/assets/happy.png')" class="mx-auto my-auto" center cover></v-img>
     </v-layout>
   </v-container>
 </template>

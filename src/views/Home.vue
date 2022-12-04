@@ -1,29 +1,17 @@
 <template>
   <v-layout column justify-center align-center class="mt-4 pt-2">
-    <VueCompareImage
-      class="hidden-md-and-down"
-      hover
-      :style="{ minWidth: '1300px' }"
-      :sliderLineWidth="sliderLine"
-      :handleSize="hSize"
-      :leftImage="leftImage"
-      :rightImage="rightImage"
-      :sliderPositionPercentage="sliderPosition"
-    />
-    <VueCompareImage
-      class="hidden-lg-and-up"
-      hover
-      :style="{ maxWidth: '400px' }"
-      :sliderLineWidth="sliderLine"
-      :handleSize="hSize"
-      :leftImage="leftImage2"
-      :rightImage="rightImage2"
-      :sliderPositionPercentage="sliderPosition"
-    />
+    <v-img
+      :src="require('../assets/profile.png')"
+      width="700px"
+      height="400px"
+      alt="나진주 프로필 사진"
+      lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
+      cover
+    ></v-img>
 
     <br>
 
-    <vue-typer class="headline" :repeat="0" text="Eldin Zaimovic"></vue-typer>
+    <vue-typer class="headline" :repeat="0" text="4년차 프론트엔드 + 앱 개발자 나진주"></vue-typer>
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -48,13 +36,33 @@
             </h3>
             <div>
               <p>
-                Hello! I’m Eldin Zaimovic. I'm a front-end developer who
-                is passionate about
+                안녕하세요!
+                저는
                 <span
                   class="green--text font-weight-bold"
-                >VUE</span>, building great user experiences,
-                fighting for simplicity over complexity and constantly learning.
-                When I'm not coding or making videos, you'll find me traveling across Europe.
+                >
+                프론트엔드 개발(Vue.js, React.js, Nuxt.js)
+                </span>
+                및
+                <span
+                  class="green--text font-weight-bold"
+                >
+                앱 개발(React-Native, Flutter)
+                </span>
+                을 하고 있는 4년차 개발자입니다!
+              </p>
+            </div>
+            <div>
+              <p>
+                저는 배움에 열정을 가지고, 또 배운것들을 나누는데 즐거움을 느끼는
+                <br/>
+                <span
+                  class="green--text font-weight-bold"
+                >
+                Programming Eudcator
+                </span>
+                이기도 합니다.
+
               </p>
             </div>
           </div>
@@ -97,7 +105,6 @@
 
 <script>
 import { VueTyper } from 'vue-typer'
-import VueCompareImage from 'vue-compare-image'
 
 export default {
   metaInfo: {
@@ -119,33 +126,28 @@ export default {
     ]
   },
   components: {
-    'vue-typer': VueTyper,
-    VueCompareImage
+    'vue-typer': VueTyper
   },
   data () {
     return {
       icons: [
-        { href: 'https://github.com/EldinZaimovic', icon: 'fab fa-github' },
+        { href: 'https://github.com/dindoo0524', icon: 'fab fa-github' },
         {
-          href: 'https://stackoverflow.com/users/story/9660700',
-          icon: 'fab fa-stack-overflow'
-        },
-        { href: 'https://twitter.com/EldinMatricar', icon: 'fab fa-twitter' },
-        {
-          href: 'https://www.linkedin.com/in/eldin-zaimovic',
+          href: 'https://www.linkedin.com/in/%EC%A7%84%EC%A3%BC-%EB%82%98-40174b229/',
           icon: 'fab fa-linkedin-in'
         },
+        { href: 'https://apps.apple.com/kr/app/%EB%91%90%EC%8D%A8%ED%82%B7-%EB%9D%BC%EC%9D%B4%EB%B8%8C/id1541099596', icon: 'fab fa-app-store-ios' },
+        { href: 'https://play.google.com/store/apps/details?id=com.smartfitkorea.smartpass', icon: 'fab fa-google-play' },
+        { href: 'http://wlswnwhro95.cafe24.com/', icon: 'fas fa-folder-open' },
         {
-          href: 'https://www.xing.com/profile/Eldin_Zaimovic?sc_o=mxb_p',
-          icon: 'fab fa-xing'
-        },
-        {
-          href: 'https://www.facebook.com/EldinVasVoli',
+          href: 'https://www.facebook.com/wlswnwhro95',
           icon: 'fab fa-facebook-f'
         },
-        { href: 'https://www.instagram.com/matricar', icon: 'fab fa-instagram' }
+        { href: 'https://www.instagram.com/dev._.rabbit', icon: 'fab fa-instagram' },
+        { href: 'https://logical-joy.tistory.com', icon: 'fas fa-pen-nib' },
+        { href: 'https://joyful-coding.liveklass.com', icon: 'fas fa-play-circle' }
       ],
-      text1: ['Front-End Developer', 'Web Developer', 'Web Designer'],
+      text1: ['Front-End Developer', 'Mobile Application Developer'],
       leftImage: 'https://i.imgur.com/bU50uS9.jpg',
       rightImage: 'https://i.imgur.com/z3ZoEEw.jpg',
       leftImage2: 'https://i.imgur.com/SXBitjh.jpg',
