@@ -163,7 +163,7 @@
 export default {
   metaInfo: {
     title: 'Resume',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Grace's Space",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
@@ -172,10 +172,10 @@ export default {
           'Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End'
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Grace' Space" },
+      { property: 'og:site_name', content: "Grace' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://dindoo0524.github.io' },
       {
         property: 'og:image',
         content: 'https://i.imgur.com/Dcz2PGx.jpg'

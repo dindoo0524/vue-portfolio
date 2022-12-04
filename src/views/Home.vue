@@ -109,20 +109,20 @@ import { VueTyper } from 'vue-typer'
 export default {
   metaInfo: {
     title: 'Home',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Grace's Space",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: "Eldin Zaimovic's Portfolio" },
+      { name: 'description', content: "Grace's Portfolio" },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Grace' Space" },
+      { property: 'og:site_name', content: "Grace' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://dindoo0524.github.io' },
       {
         property: 'og:image',
         content: 'https://i.imgur.com/Dcz2PGx.jpg'
       },
-      { property: 'og:description', content: "Eldin Zaimovic's Portfolio" }
+      { property: 'og:description', content: "Grace's Portfolio" }
     ]
   },
   components: {
