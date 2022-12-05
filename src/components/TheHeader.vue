@@ -12,11 +12,11 @@
             <v-list-tile-title>이력서</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile active-class="green--text" to="/portfolio">
+        <!-- <v-list-tile active-class="green--text" to="/portfolio">
           <v-list-tile-content>
             <v-list-tile-title>포트폴리오</v-list-tile-title>
           </v-list-tile-content>
-        </v-list-tile>
+        </v-list-tile> -->
         <v-list-tile active-class="green--text" href="https://logical-joy.tistory.com/" target="_blank">
           <v-list-tile-content>
             <v-list-tile-title>개발 블로그</v-list-tile-title>
@@ -45,7 +45,7 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat to="/" active-class="green--text headline">메인</v-btn>
         <v-btn flat to="/resume" active-class="green--text headline">이력서</v-btn>
-        <v-btn flat to="/portfolio" active-class="green--text headline">포트폴리오</v-btn>
+        <!-- <v-btn flat to="/portfolio" active-class="green--text headline">포트폴리오</v-btn> -->
         <v-btn flat href="https://logical-joy.tistory.com/" target="_blank" active-class="green--text headline">개발 블로그</v-btn>
         <v-btn flat to="/contact" active-class="green--text headline">문의</v-btn>
         <v-btn @click="changeTheme" depressed small icon>
